@@ -6,7 +6,7 @@ const outputInstructions = document.querySelector('.output-content h6');
 
 // Função para validar o texto
 function validarTexto(texto) {
-  const regex = /[A-ZÁÉÍÓÚÀÈÌÒÙãõâêîôûç!@#$%^&*()_+=[\]{};':"\\|,.<>/?`~]/;
+  const regex = /[^a-z\s]/; // Permite apenas letras minúsculas sem acentos e espaços
   if (regex.test(texto)) {
     alert("Texto inválido! Não use letras maiúsculas, acentos ou caracteres especiais.");
     return false;
