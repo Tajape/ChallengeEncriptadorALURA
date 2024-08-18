@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Encriptador</title>
+</head>
+<body>
+  <header>
+    <img class="logo-alura" src="img/logoAlura.png" alt="Logo da Alura">
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Digite seu texto</h2>
+      <textarea id="text-area" class="text-area" cols="41" rows="4" placeholder="digite seu texto aqui"></textarea>
+
+      <div class="informacao">
+        <img class="icone-exclamacao" src="img/bi_exclamation-circle-fill.png" alt="icone de exclamação">
+        <h6>Apenas letras minúsculas e sem acentos.</h6>
+      </div>
+
+      <div class="botoes">
+        <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+        <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+      </div>
+    </section>
+
+    <section class="output-section">
+      <div class="output-content">
+        <img class="output-image" src="img/boneco.png" alt="Imagem de mensagem">
+        <p>Nenhuma mensagem encontrada</p>
+        <h6>Digite um texto que você deseja criptografar ou descriptografar.</h6>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f5fc;
+  color: #0A3871;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo-alura {
+  width: 25px;
+  margin-left: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  align-items: center;
+}
+
+.input-section {
+  width: 45%;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text-area {
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+.informacao {
+  display: flex;
+  align-items: center; /* Alinha verticalmente o ícone e o texto */
+}
+
+.informacao h6 {
+  margin: 0; /* Remove margens padrão para melhor alinhamento */
+  font-size: 14px;
+  color: #5a5a5a;
+  display: flex;
+  align-items: center;
+}
+
+.icone-exclamacao {
+  width: 1em; /* Usa unidade relativa para manter a proporção adequada */
+  height: 1em; /* Garante que a altura mantenha a proporção */
+  margin-right: 0.5rem; 
+  vertical-align: middle; 
+}
+
+
+
+.botoes {
+  margin-top: 20px;
+}
+
+.btn-encriptar, .btn-desencriptar {
+  width: 160px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-encriptar {
+  background-color: #0A3871;
+  color: #ffffff;
+}
+
+.btn-desencriptar {
+  background-color: #D8DFE8;
+  color: #0A3871;
+}
+
+.output-section {
+  width: 40%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.output-content img {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.output-content p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.output-content h6 {
+  font-size: 16px;
+  color: #5a5a5a;
+}
+
+.btn-copiar {
+  background-color: #D8DFE8;
+  color: #0A3871;
+  width: 160px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-copiar:hover {
+  background-color: #C1C9D8;  /* Cor de hover para feedback visual */
+}
+
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-section {
+    width: 90%;
+  }
+
+  .output-section {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .output-content img {
+    display: none; /* Oculta a imagem do boneco em dispositivos móveis */
+  }
+
+  .output-content p {
+    font-size: 18px;
+  }
+
+  .output-content h6 {
+    font-size: 14px;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-encriptar, .btn-desencriptar {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .informacao {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icone-exclamacao {
+    width: 1em; /* Mantém a proporção do ícone em dispositivos móveis */
+    height: 1em; /* Mantém a proporção do ícone em dispositivos móveis */
+  }
+  
+}
