@@ -52,11 +52,11 @@ h2 {
 
 .informacao {
   display: flex;
-  align-items: center; /* Alinha verticalmente o ícone e o texto */
+  align-items: center; 
 }
 
 .informacao h6 {
-  margin: 0; /* Remove margens padrão para melhor alinhamento */
+  margin: 0; 
   font-size: 14px;
   color: #5a5a5a;
   display: flex;
@@ -64,8 +64,8 @@ h2 {
 }
 
 .icone-exclamacao {
-  width: 1em; /* Usa unidade relativa para manter a proporção adequada */
-  height: 1em; /* Garante que a altura mantenha a proporção */
+  width: 1em; 
+  height: 1em; 
   margin-right: 0.5rem; 
   vertical-align: middle; 
 }
@@ -134,7 +134,7 @@ h2 {
 }
 
 .btn-copiar:hover {
-  background-color: #C1C9D8;  /* Cor de hover para feedback visual */
+  background-color: #C1C9D8;  
 }
 
 /* Media query para dispositivos móveis */
@@ -183,8 +183,8 @@ h2 {
   }
 
   .icone-exclamacao {
-    width: 1em; /* Mantém a proporção do ícone em dispositivos móveis */
-    height: 1em; /* Mantém a proporção do ícone em dispositivos móveis */
+    width: 1em; 
+    height: 1em; 
   }
   
 }
